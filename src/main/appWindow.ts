@@ -1,6 +1,5 @@
 import { app, BrowserWindow } from 'electron';
 import path from 'path';
-import { registerTitlebarIpc } from '@main/window/titlebarIpc';
 
 // Electron Forge automatically creates these entry points
 declare const APP_WINDOW_WEBPACK_ENTRY: string;
@@ -19,9 +18,9 @@ export function createAppWindow(): BrowserWindow {
     height: 600,
     backgroundColor: '#202020',
     show: false,
-    autoHideMenuBar: true,
-    frame: false,
-    titleBarStyle: 'hidden',
+    autoHideMenuBar: false,
+    //frame: false,
+    //titleBarStyle: 'hidden',
     icon: path.resolve('assets/images/appIcon.ico'),
     webPreferences: {
       nodeIntegration: false,
@@ -59,5 +58,5 @@ function registerMainIPC() {
    * Here you can assign IPC related codes for the application window
    * to Communicate asynchronously from the main process to renderer processes.
    */
-  registerTitlebarIpc(appWindow);
+  //registerTitlebarIpc(appWindow);
 }
