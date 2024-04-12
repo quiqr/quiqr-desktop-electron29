@@ -1,14 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Application from '@components/Application';
+import App from "./components/App";
 
-// Say something
-console.log('[ERWT] : Renderer execution started');
+console.log('[Quiqr] : Renderer execution started');
 
-// Application to Render
 const app = (
-    <Application />
+    <App />
 );
 
-// Render application in DOM
 createRoot(document.getElementById('app')).render(app);
