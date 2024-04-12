@@ -9,6 +9,10 @@ Finally we kicked off the porting of Quiqr to a recent Electron version. Because
 
 All issues which will be fixed during this port are listed at https://github.com/quiqr/quiqr-desktop/labels/electron29
 
+<br>
+<img src="screenshot" />
+<br>
+
 We used https://github.com/codesbiome/electron-react-webpack-typescript-2024 as a starter. Special thanks to https://github.com/codesbiome getting us started.
 
 ---
@@ -16,10 +20,6 @@ We used https://github.com/codesbiome/electron-react-webpack-typescript-2024 as 
 # Electron React Webpack Typescript
 
 A prebuilt project for creating desktop apps using Electron, React, Webpack & Typescript with hot-reload, easy to use custom import aliases & executable builds for distribution.
-
-<br>
-<img src="assets/images/anim_v8.gif" />
-<br>
 
 Special thanks to [@guasam](https://github.com/guasam) for development of Custom Window, Titlebar, UI/UX etc.
 
