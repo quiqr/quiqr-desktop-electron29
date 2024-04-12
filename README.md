@@ -1,4 +1,19 @@
-# Electron React Webpack Typescript (Custom Titlebar)
+
+# Quiqr Desktop - Electron 29 edition
+
+Finally we kicked off the porting of Quiqr to a recent Electron version. Because of old architecture we were kind of locked in version 9. This project will propably takes some time as we are implementing some other long lastig wishes as well. Here's a short change list:
+
+- Port to update to Electron. At of writing v29
+- Port to TypeScript (lift and shift)
+- Multi Window Gui
+
+All issues which will be fixed during this port are listed at https://github.com/quiqr/quiqr-desktop/labels/electron29
+
+We used https://github.com/codesbiome/electron-react-webpack-typescript-2024 as a starter. Special thanks to https://github.com/codesbiome getting us started.
+
+---
+
+# Electron React Webpack Typescript
 
 A prebuilt project for creating desktop apps using Electron, React, Webpack & Typescript with hot-reload, easy to use custom import aliases & executable builds for distribution.
 
@@ -21,30 +36,15 @@ Special thanks to [@guasam](https://github.com/guasam) for development of Custom
 - 🆎 Font Loader
 - 🧹 ESLint
 - 📦 Electron Forge
-- 📐 Custom Window Frame
-- 📐 Custom Window Titlebar
-- 📐 Custom Window Menubar
+- 📐 -Custom Window Frame-
+- 📐 -Custom Window Titlebar-
+- 📐 -Custom Window Menubar-
 - 🔱 Webpack & Configuration
 - 🧩 Aliases for Project Paths
 - 🗡️ Native (node) Modules Support
 - 🔥 React Fast Refresh + Webpack HMR
 - 🌞 Dark Mode + Light Mode (Theme)
 - 🎁 Package Bundling (Distribution / Release)
-
-<br>
-
-## Custom Electron Window Titlebar & Menus
-
-This project includes [electron-window](https://github.com/guasam/electron-window) as core of custom window components and modules.
-
-**Following are the list of features it provides :**
-
-- Custom Titlebar for Electron Window.
-- Easily changable platform specific controls for max/min/close buttons using `windows` or `mac` value for `platform` property with `<WindowFrame>` in renderer.
-- Titlebar menus can show/hide by pressing `alt` or `option` key.
-- Window frame `title` prop displays in titlebar center when menus are toggeled off.
-- Menu entries can be customized in `src/main/window/titlebarMenus.ts` file.
-- Menu items and windows controls UI or colors can be customized easily by modifying the `src/renderer/window` components & styles.
 
 <br>
 
@@ -61,7 +61,6 @@ We can use predefined aliases for `import` paths already used in this project. F
 | `@src`        | `/src`                     |
 | `@styles`     | `/src/renderer/styles`     |
 | `@components` | `/src/renderer/components` |
-
 
 <br>
 
