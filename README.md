@@ -10,7 +10,7 @@ Finally we kicked off the porting of Quiqr to a recent Electron version. Because
 All issues which will be fixed during this port are listed at https://github.com/quiqr/quiqr-desktop/labels/electron29
 
 <br>
-<img src="screenshot" />
+<img src="screenshot.png" />
 <br>
 
 We used https://github.com/codesbiome/electron-react-webpack-typescript-2024 as a starter. Special thanks to https://github.com/codesbiome getting us started.
